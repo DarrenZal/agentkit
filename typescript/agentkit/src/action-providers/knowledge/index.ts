@@ -1,3 +1,3 @@
 // File: typescript/agentkit/src/action-providers/knowledge/index.ts
 
-export * from "./dkgActionProvider";
+export * from "./KnowledgeActionProvider";
