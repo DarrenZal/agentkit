@@ -5,8 +5,16 @@
   "version": "0.1.2",
   "author": "Coinbase Inc.",
   "license": "Apache-2.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -56,11 +64,5 @@
     "ts-jest": "^29.2.5",
     "tsd": "^0.31.2",
     "typescript": "^5.7.2"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
   }
 }

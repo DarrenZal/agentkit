@@ -2,7 +2,14 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "module": "commonjs",          // Match base config
+    "moduleResolution": "node",    // Match base config
+    "target": "es2020",           // Match base config
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/tests"]
