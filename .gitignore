@@ -30,7 +30,7 @@
 
 **/build/
 
-**/dist/
+# **/dist/
 
 # Virtual Environments
 **/venv/
@@ -63,7 +63,7 @@ lerna-debug.log*
 **/.projectile
 
 # Build outputs
-dist
+# dist
 out
 .next
 .nuxt
