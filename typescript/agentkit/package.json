@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "lint": "eslint -c .eslintrc.json \"src/**/*.ts\"",
     "lint:fix": "eslint -c .eslintrc.json \"src/**/*.ts\" --fix",
     "format": "prettier -c .prettierrc --write \"**/*.{ts,js,cjs,json,md}\"",
